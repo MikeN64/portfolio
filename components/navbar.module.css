@@ -1,0 +1,47 @@
+.navbar {
+	width: 5rem;
+	height: 100vh;
+	position: fixed;
+	background-color: #393e46;
+	transition: 200ms ease;
+}
+
+.navbar:hover{
+	width: 16rem;
+}
+
+.navbar:hover .linkText {
+	display: block;
+}
+
+.navbarNav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+}
+
+.navItem {
+	width: 100%;
+}
+
+.navItem:nth-last-child(4) {
+	margin-top: auto;
+}
+
+.navLink {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	height: 3rem;
+	color: #0092ca;
+	text-decoration: none;
+}
+
+.linkText {
+	display: none;
+	margin-left: 1rem;
+}
