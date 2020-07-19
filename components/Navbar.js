@@ -8,7 +8,7 @@ const Navbar = () => {
 				<li className={styles.navItem}>
 					<Link href="/">
 						<a className={styles.navLink}>
-							<i className="fas fa-home"></i>
+							<i className={`fas fa-home ${styles.faPrimary} ${styles.faSecondary}`}></i>
 							<span className={styles.linkText}>Home</span>
 						</a>
 					</Link>
@@ -17,7 +17,7 @@ const Navbar = () => {
 				<li className={styles.navItem}>
 					<Link href="/">
 						<a className={styles.navLink}>
-							<i className="far fa-smile-beam"></i>
+							<i className={`far fa-smile-beam ${styles.faPrimary} ${styles.faSecondary}`}></i>
 							<span className={styles.linkText}>About Me</span>
 						</a>
 					</Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
 				<li className={styles.navItem}>
 					<Link href="/">
 						<a className={styles.navLink}>
-							<i className="fas fa-laptop-code"></i>
+							<i className={`fas fa-laptop-code ${styles.faPrimary} ${styles.faSecondary}`}></i>
 							<span className={styles.linkText}>Work</span>
 						</a>
 					</Link>
@@ -35,7 +35,7 @@ const Navbar = () => {
 				<li className={styles.navItem}>
 					<Link href="/">
 						<a className={styles.navLink}>
-							<i className="fas fa-tools"></i>
+							<i className={`fas fa-tools ${styles.faPrimary} ${styles.faSecondary}`}></i>
 							<span className={styles.linkText}>Skills</span>
 						</a>
 					</Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
 				<li className={styles.navItem}>
 					<Link href="/">
 						<a className={styles.navLink}>
-							<i className="fas fa-file-alt"></i>
+							<i className={`fas fa-file-alt ${styles.faPrimary} ${styles.faSecondary}`}></i>
 							<span className={styles.linkText}>Resume</span>
 						</a>
 					</Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
 				<li className={styles.navItem}>
 					<Link href="/">
 						<a className={styles.navLink}>
-							<i className="fab fa-linkedin-in"></i>
+							<i className={`fab fa-linkedin-in ${styles.faPrimary} ${styles.faSecondary}`}></i>
 							<span className={styles.linkText}>LinkedIn</span>
 						</a>
 					</Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
 				<li className={styles.navItem}>
 					<Link href="/">
 						<a className={styles.navLink}>
-							<i className="fab fa-github"></i>
+							<i className={`fab fa-github ${styles.faPrimary} ${styles.faSecondary}`}></i>
 							<span className={styles.linkText}>Github</span>
 						</a>
 					</Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
 				<li className={styles.navItem}>
 					<Link href="/">
 						<a className={styles.navLink}>
-							<i className="fab fa-facebook"></i>
+							<i className={`fab fa-facebook ${styles.faPrimary} ${styles.faSecondary}`}></i>
 							<span className={styles.linkText}>Facebook</span>
 						</a>
 					</Link>
