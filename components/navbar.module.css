@@ -1,17 +1,8 @@
 .navbar {
-	width: 5rem;
-	height: 100vh;
 	position: fixed;
 	background-color: #393E46;
-	transition: 200ms ease;
-}
-
-.navbar:hover{
-	width: 16rem;
-}
-
-.navbar:hover .linkText {
-	display: block;
+	transition: width 300ms ease;
+	overflow: auto;
 }
 
 .navbarNav {
@@ -19,7 +10,6 @@
 	padding: 0;
 	margin: 0;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	height: 100%;
 }
@@ -34,7 +24,6 @@
 
 .navLink {
 	display: flex;
-	text-align: center;
 	align-items: center;
 	height: 3rem;
 	color: #BBBBBB;
@@ -64,4 +53,81 @@
 
 .faPrimary, .faSecondary {
 	transition: 600ms ease;
+}
+
+.logo {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+	text-align: center;
+	color: #eeeeee;
+	background-color: #060B13;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3ch;
+	width: 100%;
+	font-family: "Ubuntu";
+}
+
+.logoLink {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	color: #BBBBBB;
+	text-decoration: none;
+	transition: 600ms;
+}
+
+.logoLink:hover {
+	color:#eeeeee;
+}
+
+.logoImg {
+	width: 5rem;
+	height: auto;
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.navbar {
+		bottom: 0;
+		width: 100vw;
+		height: 3rem;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.navbar-nav {
+		flex-direction: row;
+	}
+
+	.navItem {
+		width: 5rem;
+	}
+
+	.navLink {
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.navbar {
+		top: 0;
+		width: 5rem;
+		height: 100vh;
+	}
+
+	.navbar:hover{
+		width: 16rem;
+	}
+
+	.navbarNav {
+		flex-direction: column;
+	}
+
+	.navbar:hover .linkText {
+		display: inline;
+	}
 }

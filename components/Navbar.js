@@ -5,6 +5,14 @@ const Navbar = () => {
 	return (
 		<nav className={styles.navbar}>
 			<ul className={styles.navbarNav}>
+				<li className={`${styles.logo}`}>
+					<Link href="/">
+						<a className={styles.logoLink}>
+							<span className={styles.linkText}>Michael Nguyen</span>
+							<img className={styles.logoImg} src="/images/MN_Logo.png" />
+						</a>
+					</Link>
+				</li>
 				<li className={styles.navItem}>
 					<Link href="/">
 						<a className={styles.navLink}>
