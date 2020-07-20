@@ -6,8 +6,8 @@
 
 html,
 body {
-  
   color: #eeeeee;
+  text-shadow: 1.5px 1px #15123e;
   margin: 0;
   padding: 0;
 }
