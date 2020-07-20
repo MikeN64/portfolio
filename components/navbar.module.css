@@ -2,7 +2,7 @@
 	position: fixed;
 	background-color: #393E46;
 	transition: width 300ms ease;
-	overflow: auto;
+	z-index: 1
 }
 
 .navbarNav {
@@ -93,6 +93,7 @@
 		bottom: 0;
 		width: 100vw;
 		height: 3rem;
+		overflow: auto;
 	}
 
 	.logo {

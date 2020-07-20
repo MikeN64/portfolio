@@ -26,7 +26,7 @@ const Navbar = () => {
 					<Link href="/">
 						<a className={styles.navLink}>
 							<i className={`far fa-smile-beam ${styles.faPrimary} ${styles.faSecondary}`}></i>
-							<span className={styles.linkText}>About Me</span>
+							<span className={styles.linkText}>About</span>
 						</a>
 					</Link>
 				</li>

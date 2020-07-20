@@ -2,15 +2,17 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
+import AnimatedBackground from "../components/AnimatedBackground"
 
 export default function Home() {
   return (
     <Layout>
       <Navbar />
-
+      <AnimatedBackground />
+      
       <main>
-        <h1>CSS is Cool</h1>
 
+        <h1>CSS is Cool</h1>
         <p>
           I'm baby kale chips affogato ennui lumbersexual, williamsburg paleo quinoa
           iceland normcore tumeric. Kitsch coloring book retro, seitan schlitz
