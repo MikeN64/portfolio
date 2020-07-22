@@ -1,0 +1,84 @@
+.typing h1, .typing h2 {
+	border-right: .15em solid rgba(50, 130, 184, 0.7);
+  	white-space: nowrap;
+  	overflow: hidden;
+  	margin: 0;
+}
+
+.typing h1:nth-child(1) {
+	width: 6ch;
+	animation: type1 0.5s steps(6, end);
+	animation-fill-mode: forwards;
+}
+
+.typing h1:nth-child(2) {
+	width: 12ch;
+	opacity: 0;
+	animation: type2 1s steps(12);
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+.typing h2 {
+	width: 40ch;
+	opacity: 0;
+	animation: type3 3.33s steps(40), blink 1s step-end infinite alternate;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes type1 {
+	0% {
+		width: 0ch;
+	}
+
+	99% {
+		border-right: .15em solid rgba(50, 130, 184, 0.7);
+	}
+
+	100% {
+		width: 6ch;
+		border: none;
+	}
+}
+
+@keyframes type2 {
+	0% {
+		width: 0ch;
+	}
+
+	1% {
+		opacity: 1;
+	}
+
+	99% {
+		border-right: .15em solid rgba(50, 130, 184, 0.7);
+	}
+
+	100% {
+		opacity: 1;
+		width: 12ch;
+		border: none;
+	}
+}
+
+@keyframes type3 {
+	0% {
+		width: 0ch;
+	}
+
+	1% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+		width: 40ch;
+	}
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
